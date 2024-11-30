@@ -1,17 +1,17 @@
 modules:
   macro:
-    - key: code-craft-ide-hello-world
+    - key: code-craft-ide
       resource: main
       resolver:
         function: resolver
-      title: code-craft-ide
-      description: Inserts Hello world!
+      title: Code Craft IDE
+      description: Embedded IDE to write and execute code snippets in Confluence.
   function:
     - key: resolver
       handler: index.handler
 resources:
   - key: main
-    path: static/hello-world/build
+    path: static/hello-frontend/build
 app:
   runtime:
     name: nodejs20.x
