@@ -1,0 +1,18 @@
+modules:
+  macro:
+    - key: code-craft-ide-hello-world
+      resource: main
+      resolver:
+        function: resolver
+      title: code-craft-ide
+      description: Inserts Hello world!
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  runtime:
+    name: nodejs20.x
+  id: ari:cloud:ecosystem::app/6d3fd93b-70ba-4224-95af-5e39b4bd7306
